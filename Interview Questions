@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question </title>
+</head>
+<body>
+    <h3>1. &nbsp;&ensp;What are the characteristics of Software?</h3>
+    <h3>2. &nbsp;&ensp;What are the various categories of software?</h3>
+    <h3>3. &nbsp;&ensp;What is SDLC?</h3>
+    <h3>4. &nbsp;&ensp;What are the various phases of SDLC?</h3>
+    <h3>5. &nbsp;&ensp;What are different SDLC models available?</h3>
+    <h3>6. &nbsp;&ensp;What is the waterfall method and what are its use cases?</h3>
+    <h3>7. &nbsp;&ensp;What is Debugging?</h3>
+    <h3>8. &nbsp;&ensp;What is the name of various CASE tools?</h3>
+    <h3>9. &nbsp;&ensp;What is the difference between Verification and Validation?</h3>
+    <h3>10.&nbsp;&ensp;What is reverse engineering?</h3>
+    <h3>11.&nbsp;&ensp;Distinguish between Alpha and Beta testing?</h3>
+    <h3>12.&nbsp;&ensp;What is the main difference between a computer program and computer software?</h3>
+    <h3>13.&nbsp;&ensp;What is a framework?</h3>
+    <h3>14.&nbsp;&ensp;Explain the concept of object-oriented programming (OOP)?</h3>
+    <h3>15.&nbsp;&ensp;What debugging tools do you use?</h3>
+    <h3>16.&ensp;&ensp;What software security protection methods do you know?</h3>
+    <h3>17.&ensp;&ensp;What is your favourite language,explain why it is your favourite</h3>
+    <h3>18.&ensp;&ensp;Explain the Big O notation?</h3>
+    <h3>19.&ensp;&ensp;Why did you become a software developer?</h3>
+    <h3>20.&ensp;&ensp;Why did you become a software developer?</h3>
+</body>
+</html>
