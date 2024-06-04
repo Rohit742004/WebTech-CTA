@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE_2023 Web Page</title>
+</head>
+
+<body style="background-color: #e2e7e6; margin: 0px;">
+    <div class="header" style="background-color: #33ffff; height: 40px;">
+        <h2 style="margin: 0px;">Details of all students in 2024</h2>
+    </div><br>
+
+    <div id="search">
+        <center>
+            <form>
+                <table>
+                    <tr>
+                        <td><label style="font-size: larger;">To Search USN : </label></td>
+                        <td><input type="text" id="usn"><br></td>
+                    </tr>
+                </table>
+
+                <br>
+                <input type="button" id="button" value="ENTER" onclick="validation(this.form)" ;>
+            </form>
+        </center>
+        <hr>
+        <diV id="extend"></diV>
+    </div>
+
+    <div class="students-display1"
+        style="display: flex; flex-wrap: wrap; justify-content: space-evenly; background-color:#e2e7e6;">
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th6.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1px;">
+                </div>
+                <p>Mr.Joy</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;
+            margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th5.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Sanjana patil</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px; width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th2.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Vishwanath K</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Deepak M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Samarth M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Ronak Patel</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="student-display2"
+        style="display: flex; flex-wrap: wrap; justify-content: space-evenly; background-color:#e2e7e6;">
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th6.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1px;">
+                </div>
+                <p>Mr.Joy</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;
+            margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th5.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Sanjana patil</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px; width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th2.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Vishwanath K</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Deepak M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Samarth M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Ronak Patel</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="students-display3"
+        style="display: flex; flex-wrap: wrap; justify-content: space-evenly; background-color:#e2e7e6;">
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th6.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1px;">
+                </div>
+                <p>Mr.Joy</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;
+            margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th5.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Sanjana patil</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px; width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th2.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Vishwanath K</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Deepak M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Samarth M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Ronak Patel</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="students-display4"
+        style="display: flex; flex-wrap: wrap; justify-content: space-evenly; background-color:#e2e7e6;">
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th6.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1px;">
+                </div>
+                <p>Mr.Joy</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;
+            margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th5.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Sanjana patil</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px; width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem;margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th2.jpeg');height: 200px; background-size: cover; margin-top: 1rem; margin-bottom: 1rem;">
+                </div>
+                <p>Vishwanath K</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Deepak M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Samarth M</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+        <div class="box"
+            style="height: 280px;width: 13%;background-color: white;padding: 15px 0px 20px;margin-top: 15px; box-shadow: 00 00 10px rgba(0,0,0,0.3);">
+            <div class="box-content" style=" margin-left: 1rem; margin-right: 1rem;">
+                <div class="box-image"
+                    style="background-image: url('th3.jpeg'); height: 200px;background-size: cover;margin-top: 1rem;margin-bottom: 1rem;">
+                </div>
+                <p>Ronak Patel</p>
+                <pre>Got a package of 65LPA<br><a href="#">see more...</a></pre>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="header" style="background-color: #33ffff; height: 30px; text-align: end;"><a href="#">SEE MORE.....</a>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    function validation(frm) {
+        var USN = document.getElementById("usn").value;
+        // var name = document.getElementById("stname").value;
+        // var namePattern = /^[a-zA-z0-9]*$/;
+        var usnPattern = /^2SD\d{2}[A-Za-z]{2}\d{3}$/;
+        var stored_usn = new Array("2SD22CS074", "2SD22CS075", "2SD22CS076", "2SD22CS077");
+        var flag = 0;
+        if (USN != "") {
+            if (USN.match(usnPattern)) {
+                for (var i = 0; i < length.stored_usn; i++) {
+                    if (stored_usn[i] == USN) {
+                        flag = 1;
+                    }
+                }
+                if (stored_usn[0] == USN) {
+                    window.location.href = 'studentDetail(74).html';
+                }
+                else if (stored_usn[1] == USN) {
+                    window.location.href = 'studentDetail(75).html';
+                }
+                else if (stored_usn[2] == USN) {
+                    window.location.href = 'studentDetail(76).html';
+                }
+                else if (stored_usn[3] == USN) {
+                    window.location.href = 'studentDetail(77).html';
+                }
+                else {
+                    alert("USN does not exist!!!");
+                }
+            }
+            else {
+                alert("PLease verify your USN!!!");
+            }
+        } else {
+            alert("Enter the USN");
+        }
+    }
+
+</script>
