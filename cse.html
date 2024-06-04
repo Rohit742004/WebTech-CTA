@@ -4,26 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSE Web Page</title>
   </head>
-  <body style="background-color: #e2e7e6; margin: 0px">
+  <body style="background-color: #e2e7e6; margin: 0px;">
     <center>
       <div style="background-color: #33ffff; height: 40px; margin: 0px 0px">
         <h1 style="margin: 0px">Computer Science & Engineering</h1>
       </div>
+<br>
+  <div id="read_usn">
+    <table>
+      <!-- <tr>
+        <td><label style="font-size: larger;">Enter Student USN : </label></td>
+        <td><input type="text" id="usn"><br></td>
+      </tr> -->
+    <form>
+      <tr>
+        <td><label style="font-size: larger;">Select the Year : </label></td>
+        <td>
+        <select  name="ddl_year">
+          <option value="0">-Select Year-</option>
+          <option value="1">2024</option>
+          <option value="2">2023</option>
+        </select>
+        </td>
+      </tr>
+    
+      <tr>
+        <td></td> <td><input type="button" id="button" value="submit" onclick="validate(this.form);"></td>
+      </tr> 
+    </form>
+    </table>
+  </div>
+
+
+
       <h2>Hightest Pakages Until Now</h2>
     </center>
 
-    <div
-      class="person-section"
+    <div class="person-display"
       style="
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         background-color: #e2e7e6;
       ">
-      <div
-        class="box"
+      <div class="box"
         style="
           height: 420px;
           width: 23%;
@@ -47,8 +73,7 @@
           <p>see more...</p>
         </div>
       </div>
-      <div
-        class="box"
+      <div class="box"
         style="
           height: 420px;
           width: 23%;
@@ -72,8 +97,7 @@
           <p>see more...</p>
         </div>
       </div>
-      <div
-        class="box"
+      <div class="box"
         style="
           height: 420px;
           width: 23%;
@@ -97,8 +121,7 @@
           <p>see more...</p>
         </div>
       </div>
-      <div
-        class="box"
+      <div class="box"
         style="
           height: 420px;
           width: 23%;
@@ -124,34 +147,27 @@
       </div>
     </div>
     <br />
-    <div class="cont-year">
-      <div class="header" style="background-color: #33ffff; height: 40px">
-        <h2>Placement of CSE Annually</h2>
-      </div>
-      <div class="list_of_years">
-        <a href="cse_2024.html"><h3>2024</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2023</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2022</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2021</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2020</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2019</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2018</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2017</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2016</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2015</h3></a>
-        <hr />
-        <a href="cse_2024.html"><h3>2014</h3></a>
-        <hr />
-      </div>
-    </div>
+
   </body>
 </html>
+<script type="text/javascript">
+ function validate(frm) {
+    var selectedYear = frm.ddl_year.value;
+    
+    if (selectedYear !== "0") {
+        switch (selectedYear) {
+            case "1":
+                window.location.href = 'cse_2024.html';
+                break;
+            case "2":
+                window.location.href = 'cse_2023.html';
+                break;
+            default:
+                alert("Something went wrong, please try again.");
+                break;
+        }
+    } else {
+        alert("Please select a year!");
+    }
+}
+</script>
