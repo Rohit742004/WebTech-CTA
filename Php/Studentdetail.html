@@ -1,0 +1,68 @@
+<!-- Course registration form, the value entered would be displayed in form of table -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Form</title>
+</head>
+
+<body>
+    <form action="StudentDeatils.php" method="POST">
+        <fieldset>
+            <legend>Student Details form</legend>
+            <table>
+                <tr>
+                    <td><label>Enter the student Name:</label></td>
+                    <td><input type="text" id="txtname" name="txtname" placeholder="Enter student name"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter the student USN:</label></td>
+                    <td>
+                        <input type="text" name="txtUsn" id="txtUsn" placeholder="Enter USN">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Company</label></td>
+                    <td><input type="text" name="txtComp" id="txtComp" placeholder="Enter the Company Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Select Job Type:</label></td>
+                    <td>
+                        <input type="radio" name="chkJobType[]" value="Software Developer/Engineer">Software
+                        Developer/Engineer
+                        <input type="radio" name="chkJobType[]" value="Cybersecurity Analyst">Cybersecurity Analyst
+                        <input type="radio" name="chkJobType[]" value="Data Analyst">Data Analyst
+                        <input type="radio" name="chkJobType[]" value="UX/UI Designer">UX/UI Designer
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Enter year of selection</label></td>
+                    <td><input type="date" id="datesel" name="datesel"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter Pacakage Details</label></td>
+                    <td><input type="text" id="txtpack" name="txtpack"></td>
+                </tr>
+                <tr>
+                    <td><label>Select CRUD Operation Type</label></td>
+                    <td>
+                        <select name="ddlCRUDOp" id="ddlCRUDOp">
+                            <option value="0">--Select Operation Type--</option>
+                            <option value="1">Create</option>
+                            <option value="2">Display</option>
+                            <option value="3">Update</option>
+                            <option value="4">Delete</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr aria-colspan="2">
+                    <td><input type="submit" value="Submit" name="btnsubmit"></td>
+                    <td><input type="reset" name="reset" id="reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <span id="displayResult"></span>
+    </form>
+</body>
+
+</html>
