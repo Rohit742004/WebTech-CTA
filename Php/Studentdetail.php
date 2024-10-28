@@ -52,12 +52,12 @@
                     </tr>";
             while ($row = mysqli_fetch_assoc($exequery)) {
                 echo "<tr>";
-                echo "<td>" . htmlspecialchars($row['Student_Name']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['Student_USN']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['Company']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['Job_type']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['Year']) . "</td>";
-                echo "<td>" . htmlspecialchars($row['Package_Details']) . "</td>";
+                echo "<td>" . htmlspecialchars($row['Student_Name'] ?? 'N/A') . "</td>";
+                echo "<td>" . htmlspecialchars($row['Student_USN'] ?? 'N/A') . "</td>";
+                echo "<td>" . htmlspecialchars($row['Company'] ?? 'N/A') . "</td>";
+                echo "<td>" . htmlspecialchars($row['Job_type'] ?? 'N/A') . "</td>";
+                echo "<td>" . htmlspecialchars($row['Year'] ?? 'N/A') . "</td>";
+                echo "<td>" . htmlspecialchars($row['Package_Details'] ?? 'N/A') . "</td>";
                 echo "</tr>";
             }
             echo "</table>";
